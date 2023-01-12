@@ -28,7 +28,8 @@ public class SlideShowScript : MonoBehaviour
 
     public void NextPage(){
         imageNumber += 4;
-        if (Images.Length < imageNumber)
+        
+        if (Images.Length > imageNumber)
         {
             changeImages();
         }
