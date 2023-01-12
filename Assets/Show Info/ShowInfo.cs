@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -5,7 +6,6 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class ShowInfo : MonoBehaviour
 {
     XRGrabInteractable m_InteractableBase;
-    Animator m_Animator;
 
     const string k_AnimTriggerDown = "TriggerDown";
     const string k_AnimTriggerUp = "TriggerUp";
@@ -14,12 +14,13 @@ public class ShowInfo : MonoBehaviour
     float m_TriggerHeldTime;
     bool m_TriggerDown;
 
+    private bool canShowInfo = true;
     public GameObject infoObject;
     private bool isShowingInfo = false; 
+    public Transform head;
     protected void Start()
     {
         m_InteractableBase = GetComponent<XRGrabInteractable>();
-        m_Animator = GetComponent<Animator>();
         m_InteractableBase.selectExited.AddListener(DroppedGun);
         m_InteractableBase.selectEntered.AddListener(PickedUp);
         m_InteractableBase.activated.AddListener(TriggerPulled);
@@ -28,14 +29,16 @@ public class ShowInfo : MonoBehaviour
 
     protected void Update()
     {
-        if (m_TriggerDown)
+        if (m_TriggerDown && canShowInfo)
         {
-            m_TriggerHeldTime += Time.deltaTime;
-
-            if (m_TriggerHeldTime >= k_HeldThreshold)
-            {
-                if (!isShowingInfo)
+            canShowInfo = false;
+            StartCoroutine(enableShowing());
+            print("showinInfo");
+            if (!isShowingInfo)
                 {
+                    print("ShowinginfoACtually");
+                    infoObject.transform.LookAt(new Vector3 (head.position.x, infoObject.transform.position.y, head.position.z));
+                    infoObject.transform.forward *= -1;
                     infoObject.SetActive(true);
                     isShowingInfo = true;
                 }
@@ -44,38 +47,33 @@ public class ShowInfo : MonoBehaviour
                     infoObject.SetActive(false);
                     isShowingInfo = false;
                 }
-            }
         }
     }
 
+    private IEnumerator enableShowing()
+    {
+        yield return new WaitForSeconds(0.3f);
+        canShowInfo = true;
+    }
     void TriggerReleased(DeactivateEventArgs args)
     {
-        m_Animator.SetTrigger(k_AnimTriggerUp);
         m_TriggerDown = false;
         m_TriggerHeldTime = 0f;
     }
 
     void TriggerPulled(ActivateEventArgs args)
     {
-        m_Animator.SetTrigger(k_AnimTriggerDown);
-        m_TriggerDown = true;
+        // m_Animator.SetTrigger(k_AnimTriggerDown);
+      m_TriggerDown = true;
     }
 
     void DroppedGun(SelectExitEventArgs args)
     {
         // In case the gun is dropped while in use.
-        m_Animator.SetTrigger(k_AnimTriggerUp);
-
-        m_TriggerDown = false;
-        m_TriggerHeldTime = 0f;
-        infoObject.SetActive(false);
-        isShowingInfo = false;
     }
 
     void PickedUp(SelectEnterEventArgs args)
     {
-        infoObject.SetActive(true);
-        isShowingInfo = true;
     }
     public void ShootEvent()
     {
