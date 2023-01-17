@@ -7,6 +7,6 @@ public class ResetScene : MonoBehaviour
 {
     public void ResetScenery()
     {
-        SceneManager.LoadScene("MapLayout");
+        SceneManager.LoadScene("FinalLayout");
     }
 }
