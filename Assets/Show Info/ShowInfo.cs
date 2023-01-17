@@ -16,8 +16,10 @@ public class ShowInfo : MonoBehaviour
 
     private bool canShowInfo = true;
     public GameObject infoObject;
-    private bool isShowingInfo = false; 
+    private bool isShowingInfo = true; 
     public Transform head;
+    
+    
     protected void Start()
     {
         m_InteractableBase = GetComponent<XRGrabInteractable>();
@@ -25,6 +27,10 @@ public class ShowInfo : MonoBehaviour
         m_InteractableBase.selectEntered.AddListener(PickedUp);
         m_InteractableBase.activated.AddListener(TriggerPulled);
         m_InteractableBase.deactivated.AddListener(TriggerReleased);
+        
+        infoObject.SetActive(false);
+        isShowingInfo = false;
+        print("nadshd");
     }
 
     protected void Update()
@@ -69,11 +75,14 @@ public class ShowInfo : MonoBehaviour
 
     void DroppedGun(SelectExitEventArgs args)
     {
-        // In case the gun is dropped while in use.
+        infoObject.SetActive(false);
+        isShowingInfo = false;
     }
 
     void PickedUp(SelectEnterEventArgs args)
     {
+        infoObject.SetActive(true);
+        isShowingInfo = true;
     }
     public void ShootEvent()
     {
