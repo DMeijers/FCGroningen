@@ -478,7 +478,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &824446886
 MonoBehaviour:
@@ -555,7 +555,7 @@ PrefabInstance:
     - target: {fileID: 9183923660207739777, guid: 955a2a92682a65449a744e935d5d8c57,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.54
+      value: 0.986
       objectReference: {fileID: 0}
     - target: {fileID: 9183923660207739777, guid: 955a2a92682a65449a744e935d5d8c57,
         type: 3}
@@ -607,8 +607,55 @@ PrefabInstance:
       propertyPath: sceneIndex
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9183923661415363276, guid: 955a2a92682a65449a744e935d5d8c57,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9183923661415363276, guid: 955a2a92682a65449a744e935d5d8c57,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9183923661415363276, guid: 955a2a92682a65449a744e935d5d8c57,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 909585628}
+    - target: {fileID: 9183923661415363276, guid: 955a2a92682a65449a744e935d5d8c57,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9183923661415363276, guid: 955a2a92682a65449a744e935d5d8c57,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PickedUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9183923661415363276, guid: 955a2a92682a65449a744e935d5d8c57,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Teleport, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9183923661415363276, guid: 955a2a92682a65449a744e935d5d8c57,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 955a2a92682a65449a744e935d5d8c57, type: 3}
+--- !u!114 &909585628 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9183923661415363274, guid: 955a2a92682a65449a744e935d5d8c57,
+    type: 3}
+  m_PrefabInstance: {fileID: 909585627}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 000c11c944c4a414485e04e57f281fee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1426607996
 GameObject:
   m_ObjectHideFlags: 0
