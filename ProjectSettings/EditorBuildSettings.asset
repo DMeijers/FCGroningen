@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stadium.unity
     guid: 2eeca5f2f0cc5104aaad83de7af42986
+  - enabled: 1
+    path: Assets/Scenes/Stadium 1.unity
+    guid: 0dded81a01a44064e81f8b53d68a0cf9
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 18185f71076119b478298c8167369285,
       type: 2}
