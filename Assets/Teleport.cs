@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,11 +9,9 @@ public class Teleport : MonoBehaviour
 {
     
     public int sceneIndex = 1;
-    
-    // Update is called once per frame
-    public void PickedUp()
+
+    private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("stuff works");
         SceneManager.LoadScene(sceneIndex);
     }
 }
