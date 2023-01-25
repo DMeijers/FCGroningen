@@ -988,7 +988,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Stadion Oosterpark:'
+  m_text: 'Euroborg Stadium:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1936,15 +1936,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Stadion Euroborg is geopend in 2006. Het ontwerp was gemaakt in de jaren
-    \u201890, toch zijn er nog wat veranderingen gemaakt aan de tekeningen van het
-    stadion. De eerste wedstrijd die gespeeld werd in Euroborg was tegen SC Heerenveen.
-    \r\n\r\nDit stadion heeft plaats voor 22.550 mensen. er zijn 700 plekken in de
-    skyboxen. Het stadion heeft een bioscoop, een school, een casino, een supermarkt,
-    een sportschool, restaurants en kantoren voor bedrijven. \r\n\r\nIn 2007 werd
-    hier de finale Europees Kampioenschap voetbal onder 21 gespeeld. Deze wedstrijd
-    werd gewonnen door Nederland. Dit was de tweede keer op rij dat Nederland de
-    Europese Kampioenschap jeugd het heeft gewonnen."
+  m_text: "The Euroborg stadium was opened in 2006. The design was made in the 90\u2019s,
+    there were some small changes made. the first game that was played in this new
+    stadium was against SC Heereveen.\r\n\r\nThis stadium can hold 22.550 people.
+    700 of these places are in the skyboxes. The stadium has a Library, a school 
+    (Noorderpoort), a casino, a supermarket, a sports school, restaurants, and offices
+    for companies. \r\n\r\nIn 2007 the final of the European Championship of the
+    youth below 21. This match was won by the Netherlands. This was their second
+    win.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

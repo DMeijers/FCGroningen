@@ -5818,6 +5818,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 224569090113243651, guid: c05200efc852ae448b0ba8ee12cb3f81,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d7acc18afd360c74f8472aac77cf96c7,
+        type: 3}
     - target: {fileID: 6442011246590246720, guid: c05200efc852ae448b0ba8ee12cb3f81,
         type: 3}
       propertyPath: m_RootOrder
@@ -8826,6 +8832,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1293629772, guid: e651e7305f63f1b41bbf36ed077e8eb6, type: 3}
+      propertyPath: m_text
+      value: Grab this button to reset room
+      objectReference: {fileID: 0}
     - target: {fileID: 7781393428198880466, guid: e651e7305f63f1b41bbf36ed077e8eb6,
         type: 3}
       propertyPath: m_RootOrder
@@ -9718,6 +9728,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7018925055963857372, guid: 8258247419acc0c4e9cc81c53dbbd5a9,
+        type: 3}
+      propertyPath: m_text
+      value: Gallery
+      objectReference: {fileID: 0}
     - target: {fileID: 7018925057931254168, guid: 8258247419acc0c4e9cc81c53dbbd5a9,
         type: 3}
       propertyPath: m_RootOrder

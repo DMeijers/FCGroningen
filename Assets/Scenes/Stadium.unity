@@ -1259,13 +1259,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "In 1935 werd hier door FC Groningen de eerste wedstrijd gespeeld. Toen
-    heette de club nog GVAV. Het stadion had 12.500 zitplaatsen en het was nog toegestaan
-    om staaplaatsen te hebben in een stadion.Het stadion zelf was gebouwd in 1933.
-    Er werd door FC Groningen op dit stadion gespeeld tot 22 december 2005. Ze speelde
-    de laatste wedstrijd tegen Fc Volendam en wonnen dit met 3-0. \r\n\r\nIn 1985
-    hadden ze een record aan bezoekers, wel 21.500. De competitiewedstrijd die bekeken
-    werd eindigde in een gelijkspel.(1-1)\r\n"
+  m_text: 'In the year 1935, the first game was played at this stadium by FC Groningen.
+    The club was still named GVAV. This stadium had 12.500 seats and there were still
+    standing spots allowed. The stadium itself was built in 1933. This stadium was
+    used till the 22nd of December 2005. The last game played was FC Groningen against
+    Volendam.
+
+    
+
+    In the year 1985, they had a record of visitors. A total
+    of 21.500 people. The game that was watched was a competition that ended 1-1.
+
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1587,7 +1593,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Stadion Oosterpark:'
+  m_text: 'Oosterpark Stadium:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
